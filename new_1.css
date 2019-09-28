@@ -26,9 +26,12 @@ body {
 main{
     background-color:green;
 }
-.header {
-    display: flex;
-    flex-direction: column;
+div.header {
+    background-color: yellowgreen;
+    width: calc(100vw - 56px);
+    text-align: center;
+    border: 2px solid black;
+    border-radius:3px ;
 }
 section {
     background: darkgoldenrod;
@@ -43,7 +46,8 @@ section.second{
 table{
     background-color: gold;
     border: 4px solid green;
-    border-collapse: ;
+    width: calc(100vw - 64px);
+
 }
 th, td{
     border: 2px solid #000000;
