@@ -46,8 +46,8 @@ header {
     transition: height 0.5s ease;
     position: relative;
 }
-.header_menu.header_menu--desplegado {
-    height: 120px;
+.header_menu:hover {
+    height: 140px;
 }
 .menu_subtitle {
     margin: 0 0 .5rem;
@@ -58,18 +58,20 @@ header {
     opacity: 0;
     transition: opacity .5s ease .5s;
 }
-.menu_menu.menu_menu--opacity {
+.menu_menu:hover {
     opacity: 1;
 }
 .menu_menu a {
-    color: aqua;
-    font-weight: 900;
-    font-size: 1.2rem;
+    color: blue;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+    font-size: inherit;
     transition: font-size .5 ease;
 }
 .menu_menu a:hover{
     color: aqua;
-    font-size: 1.3rem;
+    font-size: inherit;
 }
 .menu_btn {
     cursor: pointer;
@@ -82,7 +84,9 @@ header {
 }
 #home {
     background-color: yellow;
-    min-height: 100vh;
+    min-height: 25vh;
+    border: 2px solid black;
+    border-radius: 10px;
 }
 #conocimiento {
     background-color: red;
@@ -108,16 +112,15 @@ figure.mifoto {
     border-radius: 50%;
     overflow: hidden;
 }
-figure.mifoto figcaption {
+figcaption {
     position: absolute;
     top: 50%;
     left: 70%;
     font-size: 1.2rem;
-    opacity: 0;
-    transition: opacity 1s .2s ease, top .5s ease;
-}
-figure.mifoto:hover figcaption {
     opacity: 1;
+}
+figcaption:hover {
+    opacity: 0;
 }
 table{
     background-color: gold;
