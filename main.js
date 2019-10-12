@@ -1,5 +1,5 @@
 var hello = document.querySelector('div.header')
 setTimeout(function(){
-    hello.innerHTML = '<strong>Oh mama!!</strong>'
-}, 3000);
+    hello.innerHTML = '<strong>Urtzi Arana : Oh mama!!</strong>'
+}, 10000);
 
