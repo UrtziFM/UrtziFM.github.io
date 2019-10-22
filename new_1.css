@@ -11,10 +11,10 @@ html {
 #container {
     background: #CCC;
     width: 100%;
-    padding: 1rem 1.25rem;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
-    overflow-y: scroll;
+    /*overflow-y: scroll;*/
 }
 @import url('https://fonts.googleapis.com/css?family=Lobster');
 body {
@@ -22,125 +22,149 @@ body {
     color: #111111;
     font-family: 'Lobster', cursive;
 }
-main{
-    background-color:green;
-}
 .header {
-    background-color: yellowgreen;
+    background-color: rgb(93, 139, 8);
     text-align: center;
-    border: 4px solid black;
+    border: 2px solid black;
     border-radius: 10px;
 }
 header {
-    background-color: cornflowerblue;
-    border: 1px solid black;
-    border-radius: 3px;
+    background-color: rgb(73, 128, 77);
+    border: 2px solid black;
+    border-radius: 10px;
 }
 .header_menu {
     margin-top: 3px;
     margin-bottom: 3px;
     display: flex;
     flex-direction: column;
-    height: 72px;
+    height: 99px;
     overflow: hidden;
     transition: height 0.5s ease;
     position: relative;
 }
 .header_menu:hover {
     height: 140px;
+    background-color: rgb(100, 161, 9);
 }
 .menu_subtitle {
-    margin: 0 0 .5rem;
+    margin: 3px;
 }
 .menu_menu {
+    margin: 3px;
     display: flex;
     justify-content: space-evenly;
-    opacity: 0;
-    transition: opacity .5s ease .5s;
+    opacity: 0.3;
+    transition: opacity .1s ease;
 }
 .menu_menu:hover {
     opacity: 1;
 }
 .menu_menu a {
-    color: blue;
-    border: 1px solid black;
+    color: black;
+    border: 2px solid black;
     border-radius: 10px;
+    margin: 2px;
     text-align: center;
     font-size: inherit;
     transition: font-size .5 ease;
 }
 .menu_menu a:hover{
-    color: aqua;
+    color: yellowgreen;
     font-size: inherit;
 }
 .menu_btn {
     cursor: pointer;
     position: absolute;
     right: 1rem;
-    top: 1rem;
+    top: 3rem;
     border: 2px solid black;
     border-radius: 10px;
     padding: .5rem;
 }
 #home {
-    background-color: yellow;
-    min-height: 25vh;
+    background-color: rgb(17, 155, 58);
+    min-height: 20vh;
     border: 2px solid black;
     border-radius: 10px;
-}
-#conocimiento {
-    background-color: red;
-    min-height: 100vh;
-}
-#contacto {
-    background-color: aliceblue;
-    min-height: 100vh;
+    margin: 2px;
+    text-align: center;
 }
 article {
-    background: darkgoldenrod;
+    background: rgb(100, 161, 9);
     text-align: center;
-    border: 4px solid green;
+    border: 2px solid black;
     border-radius: 10px;
-}
-article.second {
-    background-color: deeppink;
-    text-align: center;
 }
 figure.mifoto {
     position: relative;
     border: 2px solid black;
-    border-radius: 50%;
+    border-radius: 60%;
     overflow: hidden;
 }
 figcaption {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 70%;
-    font-size: 1.2rem;
-    opacity: 1;
+    opacity: 0.2;
+}
+strong {
+    font-size: 1.3rem;
 }
 figcaption:hover {
-    opacity: 0;
+    opacity: 1;
+    cursor: pointer;
 }
-table{
-    background-color: gold;
-    border: 4px solid green;
-}
-th, td{
-    border: 2px solid #000000;
-    padding: 13px;
-}
-aside{
-    padding: 8px;
-    background-color: chocolate;
+#conocimiento {
+    background: rgb(57, 139, 83);
     text-align: center;
-    border: 4px solid green;
+}
+#slide {
+    border: 2px solid black;
+    border-radius: 10px;
+    position: relative;
+    margin: 5px;
+    height: 320px;
+    overflow: hidden;
+}
+#slide > img {
+    width: 480px;
+    top: 1px;
+    left: 480px;
+    position: absolute;
+    transition: left 1s ease;
+}
+#slide > img.activa {
+    left: 0px;
+}
+#slide > img.fuera {
+    left: -490px;
+}
+.arrow {
+    background-color: #ccc;
+    opacity: .4;
+    height: 320px;
+    width: 20px;
+    position: absolute;
+}
+.right {
+    right: 0;
+}
+.left {
+    left: 0;
+}
+#contacto{
+    padding: 8px;
+    margin: 2px;
+    background-color: rgb(38, 156, 44);
+    text-align: center;
+    border: 2px solid black;
     border-radius: 10px;
 }
 aside form label{
     padding: 10px;
-    background-color:rgb(0, 183, 255);
-    border: 4px solid black;
+    background-color:rgba(0, 255, 157, 0.205);
+    border: 2px solid black;
     border-radius: 10px;
 }
 footer{
@@ -149,4 +173,3 @@ footer{
     border: 4px solid green;
     border-radius: 10px;
 }
-
