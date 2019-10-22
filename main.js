@@ -1,7 +1,7 @@
 var hello = document.querySelector('div.header')
 setTimeout(function(){
     hello.innerHTML = '<strong>Urtzi Arana : Oh mama!!</strong>'
-}, 10000);
+}, 5000);
 
 //let formu = document.querySelector('form').addEventListener("submit")
 //console.log("formu")
