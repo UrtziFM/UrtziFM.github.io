@@ -3,11 +3,13 @@ setTimeout(function(){
     hello.innerHTML = '<strong>Urtzi Arana : Oh mama!!</strong>'
 }, 5000);
 
-//let formu = document.querySelector('form').addEventListener("submit")
-//console.log("formu")
+//document.querySelector('form').addEventListener("submit", function(evt){
+//    evt.preventDefault();
+//console.log(this.proposal.value);
+//})
 
-let arrowL = document.querySelector(".arrow.left");
-let arrowR = document.querySelector(".arrow.right");
+let arrowL = document.querySelector('span.arrow.left');
+let arrowR = document.querySelector('span.arrow.right');
 let indiceImg = 0;
 
 let imagenes = document.querySelectorAll("#slide>img");

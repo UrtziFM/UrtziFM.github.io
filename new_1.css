@@ -1,5 +1,5 @@
 @import 'reset.css';
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 565px){
 * {
     box-sizing: border-box;
     font-size: 16px;
@@ -123,6 +123,7 @@ figcaption:hover {
     border: 2px solid black;
     border-radius: 10px;
     position: relative;
+    max-width: 480px;
     margin: 5px;
     height: 320px;
     overflow: hidden;
@@ -135,12 +136,13 @@ figcaption:hover {
     transition: left 1s ease;
 }
 #slide > img.activa {
-    left: 0px;
+    left: 1px;
 }
 #slide > img.fuera {
     left: -490px;
 }
 .arrow {
+    cursor: pointer;
     background-color: #ccc;
     opacity: .4;
     height: 320px;
@@ -172,5 +174,22 @@ footer{
     text-align: center;
     border: 4px solid green;
     border-radius: 10px;
+}
+#backup{
+    opacity: 0;
+}
+}
+@media only screen and (min-width: 566px){
+#backup{
+    background-color: red;
+    padding: 40px;
+    font-size: 3rem;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    height: 100vh;
+}
+main{
+    opacity:0;
 }
 }
