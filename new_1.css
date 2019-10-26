@@ -99,8 +99,12 @@ article {
 figure.mifoto {
     position: relative;
     border: 2px solid black;
+    filter: grayscale(90%);
     border-radius: 60%;
     overflow: hidden;
+}
+figure.mifoto:hover {
+    filter: none;
 }
 figcaption {
     position: absolute;
