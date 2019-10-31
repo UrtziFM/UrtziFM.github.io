@@ -3,6 +3,9 @@ setTimeout(function(){
     hello.innerHTML = '<strong>Urtzi Arana : Oh mama!!</strong>'
 }, 5000);
 
+var nombre_visitante = prompt('Hello! What´s your name, please?');
+alert('Hola ' + nombre_visitante);
+
 //document.querySelector('form').addEventListener("submit", function(evt){
 //    evt.preventDefault();
 //console.log(this.proposal.value);

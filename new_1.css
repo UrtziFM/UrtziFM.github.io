@@ -1,5 +1,5 @@
 @import 'reset.css';
-@media only screen and (max-width: 565px){
+@media only screen and (max-width: 479px){
 * {
     box-sizing: border-box;
     font-size: 16px;
@@ -44,7 +44,7 @@ header {
     position: relative;
 }
 .header_menu:hover {
-    height: 140px;
+    height: 154px;
     background-color: rgb(100, 161, 9);
 }
 .menu_subtitle {
@@ -127,15 +127,15 @@ figcaption:hover {
     border: 2px solid black;
     border-radius: 10px;
     position: relative;
-    max-width: 480px;
+    max-width: 400px;
     margin: 5px;
     height: 320px;
     overflow: hidden;
 }
 #slide > img {
-    width: 480px;
+    width: 400px;
     top: 1px;
-    left: 480px;
+    left: 400px;
     position: absolute;
     transition: left 1s ease;
 }
@@ -143,7 +143,7 @@ figcaption:hover {
     left: 1px;
 }
 #slide > img.fuera {
-    left: -490px;
+    left: -400px;
 }
 .arrow {
     cursor: pointer;
