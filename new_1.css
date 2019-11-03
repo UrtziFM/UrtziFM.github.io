@@ -40,6 +40,7 @@ header {
     flex-direction: column;
     height: 99px;
     overflow: hidden;
+    cursor: pointer;
     transition: height 0.5s ease;
     position: relative;
 }
@@ -69,7 +70,7 @@ header {
     font-size: inherit;
     transition: font-size .5 ease;
 }
-.menu_menu a:hover{
+.menu_menu a:active{
     color: yellowgreen;
     font-size: inherit;
 }
@@ -127,15 +128,15 @@ figcaption:hover {
     border: 2px solid black;
     border-radius: 10px;
     position: relative;
-    max-width: 400px;
+    max-width: 352px;
     margin: 5px;
     height: 320px;
     overflow: hidden;
 }
 #slide > img {
-    width: 400px;
+    width: 352px;
     top: 1px;
-    left: 400px;
+    left: 352px;
     position: absolute;
     transition: left 1s ease;
 }
@@ -143,7 +144,7 @@ figcaption:hover {
     left: 1px;
 }
 #slide > img.fuera {
-    left: -400px;
+    left: -352px;
 }
 .arrow {
     cursor: pointer;
@@ -183,7 +184,7 @@ footer{
     opacity: 0;
 }
 }
-@media only screen and (min-width: 566px){
+@media only screen and (min-width: 480px){
 #backup{
     background-color: red;
     padding: 40px;
